@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            color: white;
+            background-color: #000; /* Primary black background */
+            height: 100%; /* Ensure the body fills the viewport */
+            background-attachment: fixed;
+            background-size: cover;
+            background-position: center;
+        }
+
+        header {
+            background-color: #141414; /* Black navbar */
+            color: white;
+            padding: 20px 50px;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .navbar h1 {
+            font-size: 24px;
+            margin: 0;
+            color: 	#88d4ca; 
+        }
+
+        .navbar ul {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar ul li {
+            margin: 0 45px;
+        }
+
+        .navbar ul li a {
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s ease; /* Smooth hover effect */
+        }
+
+        .navbar ul li a:hover {
+            color: 	#88d4ca; 
+        }
+
+        .customize {
+            display: flex;
+            align-items: center;
+        }
+
+        .customize a {
+            color: 	#88d4ca; 
+            text-decoration: none;
+        }
+
+        .customize i {
+            padding-right: 10px;
+            color: 	#88d4ca; 
+        }
+
+        main {
+            background: #000; /* Black main area */
+            height: 90vh; /* Use full viewport height */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        /* Welcome header */
+        .welcome {
+            position: absolute;
+            top: 10%; /* Places it near the top of the page */
+            left: 50%; /* Centers it horizontally */
+            transform: translateX(-50%); /* Adjusts for perfect horizontal centering */
+            text-align: center;
+            margin-top: 50px
+        }
+
+        .welcome h2 {
+            font-size: 28px;
+            margin: 0;
+            font-weight: bold;
+            color: 	#88d4ca; 
+        }
+
+        /* Intro section */
+        .intro {
+            position: relative;
+            z-index: 1; /* Ensure it's above other content */
+        }
+
+        .intro h1 {
+            font-size: 100px;
+            margin: 0px;
+            font-weight: bold;
+            color: white;
+            text-shadow: 0 0 10px 	#88d4ca; 
+        }
+
+        .intro button {
+            font-size: 15px;
+            padding: 18px 30px;
+            background-color: 	#88d4ca; 
+            color: black;
+            border: none;
+            cursor: pointer;
+            margin-top: 20px;
+            border-radius: 20px;
+            transition: background-color 0.3s ease;
+        }
+
+        .intro button:hover {
+            background-color: 	#88d4ca; /* Darker red for hover effect */
+        }
+        
+        /* Add continuous bounce animation */
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+.intro h1 {
+    font-size: 70px;
+    margin: 0px;
+    font-weight: bold;
+    color: white;
+    text-shadow: 0 0 10px 	#88d4ca; /* Subtle red glow */
+    animation: bounce 1s ease-in-out infinite; /* Continuous bouncing */
+}
+
+.intro h1:hover {
+    animation: bounce 0.0s ease-in-out infinite; /* Faster bounce on hover */
+}
+
+        
+    </style>
+</head>
+<body>
+<header>
+    <div class="navbar">
+        <h1>GROUP1.</h1>
+        <nav>
+            <ul>
+                <li><a href="home.html">HOME</a></li>
+                <li><a href="aboutjam.html">JAM</a></li>
+                <li><a href="aboutcamille.html">CAMILE</a></li>
+                <li><a href="aboutgwen.html">GWEN</a></li>
+                <li><a href="aboutsean.html">SEAN</a></li>
+                <li><a href="aboutalvin.html">ALVIN</a></li>
+            </ul>
+        </nav>
+        <div class="customize">
+            <i class=''></i>
+            <a href="edit.php"></a>
+        </div>
+    </div>
+</header>
+
+<main id="home">
+    <!-- Middle-top "Welcome" text -->
+    <div class="welcome">
+        <h2>WELCOME TO OUR</h2>
+        <h2>LANDING PAGE</h2>
+    </div>
+
+    <!-- Centered Intro section -->
+    <div class="intro">
+        <h1></h1>
+        <h1>Group 1</h1>
+        
+    </div>
+</main>
+</body>
+</html>
