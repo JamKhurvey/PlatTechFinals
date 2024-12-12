@@ -1,0 +1,1063 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            color: white;
+            background: black; /* Fallback background color */
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+
+        header {
+            background-color: #141414; /* Dark Netflix background */
+            color: white;
+            padding: 20px 50px;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .navbar h1 {
+            font-size: 24px;
+            margin: 0;
+            color: #2e82e8; 
+        }
+
+        .navbar ul {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar ul li {
+            margin: 0 45px;
+        }
+
+        .navbar ul li a {
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .navbar ul li a:hover {
+            color: #2e82e8; 
+        }
+
+        .customize {
+            display: flex;
+            align-items: center;
+        }
+
+        .customize a {
+            color: #2e82e8; 
+            text-decoration: none;
+        }
+
+        .customize i {
+            padding-right: 10px;
+            color: #2e82e8; 
+        }
+
+        .header {
+            text-align: center;
+            padding: 20px 20px;
+        }
+
+        .profile-container {
+            text-align: center;
+            margin-top: 0px;
+        }
+        .profile-picture {
+        perspective: 1000px; /* Adds depth to the rotation effect */
+        }
+
+        .profile-picture img {
+        width: 350px;
+        height: 350px;
+        object-fit: cover;
+        border-radius: 50%;
+        border: 5px solid #2e82e8;
+        transition: transform 0.6s ease;
+        transform-style: preserve-3d;
+        }
+
+        .profile-picture img:hover {
+        transform: rotateY(180deg);
+        box-shadow: 0 0 20px #2e82e8;
+        }
+
+        .profile-picture img {
+            width: 350px; /* Adjust the size as needed */
+            height: 350px;
+            object-fit: cover;
+            border-radius: 50%; /* Circular image */
+            border: 5px solid #2e82e8; 
+        }
+
+        .title {
+            font-size: 70px;
+            font-weight: bold;
+            color: #2e82e8;
+            margin-bottom: 10px;
+            margin-top: 0px;
+        }
+
+        .subtitle {
+            padding-top: 0px;
+            margin-top: 0px;
+            font-size: 30px;
+            color: white; /* White subtitle */
+            text-decoration: overline;
+        }
+
+        .about {
+            padding: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: auto;
+        }
+
+        .bcard {
+            display: flex;
+            width: 80%;
+            background-color: rgba(0, 0, 0, 0.10); /* Dark background with slight opacity */
+            padding: 10px;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.10);
+        }
+
+        .left-panel {
+            flex: 1;
+            text-align: left;
+            padding-right: 20px;
+            border-right: 2px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .right-panel {
+            flex: 2;
+            padding-left: 20px;
+        }
+
+        .info-list {
+            display: flex;
+            flex-direction: column; /* Arrange items vertically */
+            gap: 10px;
+            margin: 0;
+            padding: 0;
+        }
+
+        .info-list li {
+            list-style: none;
+            font-size: 18px;
+        }
+
+        .info-list strong {
+            color: #2e82e8; 
+        }
+        
+
+        .one {
+            font-size: 30px;
+            margin-bottom: 20px;
+            margin-left: 0;
+            margin-top: 55px;
+        }
+
+        .two {
+            font-size: 17px;
+            line-height: 1.8;
+            font-style: italic;
+            color: rgba(255, 255, 255, 0.8);
+        }
+
+        b {
+            color: #2e82e8;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <div class="navbar">
+        <h1>JAMKHRVY.</h1>
+        <nav>
+            <ul>
+                <li><a href="landingpage.html">HOME</a></li>
+                <li><a href="aboutjam.html">JAM</a></li>
+                <li><a href="aboutcamille.html">CAMILE</a></li>
+                <li><a href="aboutgwen.html">GWEN</a></li>
+                <li><a href="aboutsean.html">SEAN</a></li>
+                <li><a href="aboutalvin.html">ALVIN</a></li>
+                
+            </ul>
+        </nav>
+        <div class="customize">
+            <i class=''></i>
+            <a href="edit.php"></a>
+        </div>
+    </div>
+</header>
+
+<div class="header">
+    <h1 class="title">ABOUT ME</h1>
+    <p class="subtitle">KNOW ME MORE</p>
+</div>
+
+<div class="profile-container">
+    <div class="profile-picture">
+        <img src="img/me.jpg" alt="Profile Picture">
+    </div>
+</div>
+
+<div class="about">
+    <div class="bcard">
+        <div class="left-panel">
+            <ul class="info-list">
+                <li><strong>Name:</strong> Jam Khurvey V. Balolong</li>
+                <li><strong>Age:</strong> 19 yrs old</li>
+                <li><strong>Address:</strong> Pob. Norte Sta. Barbara Pangasinan</li>
+                <li><strong>Birthdate:</strong> October 7, 2005</li>
+                <li><strong>Course:</strong> Bachelor of Science in Information Technology</li>
+                <li><strong>School:</strong> Universidad De Dagupan</li>
+            </ul>
+        </div>
+        <div class="right-panel">
+            <p class="two">
+                Graduated from Daniel Maramba National High School, 
+                I’m currently in my 2nd year of pursuing a BS in Information Technology at Universidad de Dagupan. 
+                My passion for technology and gaming led me here, though I’ve found that coding isn’t my favorite aspect. 
+                Instead, I enjoy creative activities like video editing. 
+                I'm going with the flow as I continue to study IT and look at methods to incorporate creativity into my career in the future.
+            </p>
+        </div>
+    </div>
+</div>
+<style>
+    body, html {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+        color: white;
+        background-color: #000;
+    }
+
+    header {
+        background-color: #141414;
+        color: white;
+        padding: 20px 50px;
+    }
+
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .navbar h1 {
+        font-size: 24px;
+        margin: 0;
+        color: #2e82e8;
+    }
+
+    .navbar ul {
+        list-style: none;
+        display: flex;
+        margin: 0;
+        padding: 0;
+    }
+
+    .navbar ul li {
+        margin: 0 45px;
+    }
+
+    .navbar ul li a {
+        color: white;
+        text-decoration: none;
+        transition: color 0.3s ease;
+    }
+
+    .navbar ul li a:hover {
+        color: #2e82e8;
+    }
+
+    .customize {
+        display: flex;
+        align-items: center;
+    }
+
+    .customize a {
+        text-decoration: none;
+        color: #2e82e8
+    }
+
+    .customize i {
+        padding-right: 10px;
+        color: #2e82e8;
+    }
+
+    .header {
+        padding: 50px;
+        text-align: center;
+    }
+
+    .title {
+        font-size: 70px;
+        font-weight: bold;
+        color: #2e82e8;
+        margin-bottom: 10px;
+    }
+
+    .subtitle {
+         padding-top: 0px;
+    margin-top: 0px;
+    font-size: 30px;
+    color: white; /* White subtitle */
+    text-decoration: overline;
+    }
+
+    .section-title {
+        font-size: 30px;
+        color: #2e82e8;
+        text-align: center;
+        margin: 20px 0;
+    }
+
+    .projects {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 20px;
+        padding: 50px;
+    }
+
+    .project-card {
+        background-color: #222;
+        border-radius: 20px;
+        text-align: center;
+        padding: 20px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .project-card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    }
+
+    .project-card img {
+    width: 100%; /* Make images responsive */
+    max-width: 370px; /* Maximum width for images */
+    height: 300px; /* Fixed height for consistency */
+    object-fit: cover; /* Ensures images fill the space without distortion */
+    border-radius: 10px;
+    margin-bottom: 15px;
+    transition: transform 0.3s ease;
+    }
+
+    .project-card:hover img {
+    transform: scale(1.1); /* Slight zoom on hover */
+    }
+
+    .project-title {
+        font-size: 30px;
+        color: #2e82e8;
+        margin-bottom: 0px;
+    }
+
+    .project-description {
+        font-size: 25px;
+        color: #fff;
+        margin-bottom: 15px;
+    }
+
+    .project-buttons {
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+        margin-top: 10px;
+    }
+
+    .project-buttons i {
+        font-size: 100px;
+        transition: color 0.3s ease, transform 0.3s ease;
+    }
+
+    .project-buttons i:hover {
+        color: #2e82e8;
+        transform: scale(1.3);
+    }
+    project-card .project-buttons i.bxl-java {
+    color: #ffa500 ; /* Java - Orange */
+    }
+
+    .project-card .project-buttons i.bxl-html5 {
+    color: #e34c26; /* HTML - Red-Orange */
+    }
+
+    .project-card .project-buttons i.bxl-css3 {
+    color: #2965f1; /* CSS - Blue */
+    }
+
+    .project-card .project-buttons i.bxl-javascript {
+    color: #f7df1e; /* JavaScript - Yellow */
+    }
+</style>
+</head>
+<body>
+    <div class="header">
+        <h1 class="title">PROJECTS</h1>
+        <p class="subtitle">MY PROJECTS</p>
+    </div>
+
+    <div class="section-title"></div>
+    <div class="projects">
+        <!-- Rainbow Calculator -->
+        <div class="project-card">
+            <img src="img/rnb calculator.png" alt="Rainbow Calculator">
+            <h3 class="project-title">Rainbow Calculator</h3>
+            <p class="project-description">
+                Rainbow calculator is a basic java program that I learned when I was still a 1st Year student. 
+                Doing this program was a bit challenging but fun to make it!
+            </p>
+            <div class="project-buttons">
+            <i class="bx bxl-java" title="Java"></i>
+            </div>
+        </div>
+
+        <!-- Tic-Tac-Toe -->
+        <div class="project-card">
+            <img src="img/tictactoe.jpg" alt="TIC-TAC-TOE GAME">
+            <h3 class="project-title">Tic-Tac-Toe</h3>
+            <p class="project-description">
+                A simple Tic-Tac-Toe game made with Java.
+            </p>
+            <div class="project-buttons">
+            <i class="bx bxl-java" title="Java"></i>
+            </div>
+        </div>
+    </div>
+
+    <div class="section-title"></div>
+    <div class="projects">
+        <!-- Influencer/Your Website -->
+        <div class="project-card">
+            <img src="img/imagenotfound.png" alt="Influencer/Your Website">
+            <h3 class="project-title">Influencer/Your Website</h3>
+            <p class="project-description">
+                A responsive personal website for an influencer or brand, showcasing sections like Home, About , and Social Media Links.
+            </p>
+            <div class="project-buttons">
+            <i class="bx bxl-html5" title="HTML"></i>
+            <i class="bx bxl-css3" title="CSS"></i>
+            </div>
+        </div>
+
+        <!-- Simple Website -->
+        <div class="project-card">
+            <img src="img/simple website.png" alt="Simple Website">
+            <h3 class="project-title">Simple Website</h3>
+            <p class="project-description">
+                A minimalist website built with HTML and CSS, featuring navigation, contact forms, and a photo gallery.
+            </p>
+            <div class="project-buttons">
+            <i class="bx bxl-html5" title="HTML"></i>
+            <i class="bx bxl-css3" title="CSS"></i>
+            </div>
+        </div>
+     </div>
+
+    <div class="section-title"></div>
+    <div class="projects">
+        <!-- Calendar -->
+        <div class="project-card">
+            <img src="img/calendar.png" alt="Calendar ">
+            <h3 class="project-title">Calendar</h3>
+            <p class="project-description">
+                A simple calendar app created with HTML and CSS, displaying days and months in a clean, organized grid layout.
+            </p>
+            <div class="project-buttons">
+            <i class="bx bxl-html5" title="HTML"></i>
+            <i class="bx bxl-css3" title="CSS"></i>
+            </div>
+        </div>
+
+        <!-- Promoting Website -->
+        <div class="project-card">
+            <img src="img/takk.jpg" alt="Promoting Website ">
+            <h3 class="project-title">Promoting Website</h3>
+            <p class="project-description">
+                A promotional website with interactive elements like sliders and pop-ups, built using HTML, CSS, and JavaScript.
+            </p>
+            <div class="project-buttons">
+            <i class="bx bxl-html5" title="HTML"></i>
+            <i class="bx bxl-css3" title="CSS"></i>
+            <i class="bx bxl-javascript" title="JavaScript"></i>
+            </div>
+        </div>
+     </div>
+     
+    </div>
+<style>
+    body, html {
+margin: 0;
+padding: 0;
+font-family: Arial, sans-serif;
+color: white;
+background-color: #000; /* Dark background, */
+}
+
+header {
+background-color:  #141414; /* Dark background for header */
+color: white;
+padding: 20px 50px;
+}
+
+.navbar {
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+.navbar h1 {
+font-size: 24px;
+margin: 0;
+color: #2e82e8; 
+}
+
+.navbar ul {
+list-style: none;
+display: flex;
+margin: 0;
+padding: 0;
+}
+
+.navbar ul li {
+margin: 0 45px;
+}
+
+.navbar ul li a {
+color: white;
+text-decoration: none;
+transition: color 0.3s ease;
+}
+
+.navbar ul li a:hover {
+color: #2e82e8; 
+}
+
+.customize {
+display: flex;
+align-items: center;
+}
+
+.customize a {
+color: white;
+text-decoration: none;
+color: #2e82e8; 
+}
+
+.customize i {
+padding-right: 10px;
+color: #2e82e8; 
+}
+
+.header {
+text-align: center;
+padding: 50px;
+}
+
+.title {
+font-size: 70px;
+font-weight: bold;
+color: #2e82e8;
+margin-bottom: 10px;
+margin-top: 0px;
+}
+
+.subtitle {
+padding-top: 0px;
+margin-top: 0px;
+font-size: 30px;
+color: white; /* White subtitle */
+text-decoration: overline;
+}
+
+.skills {
+display: flex;
+justify-content: space-around;
+flex-wrap: wrap;
+gap: 20px;
+margin: 20px auto;
+max-width: 1200px;
+}
+
+.skills-column {
+flex: 1;
+min-width: 50px;
+background: #222; /* Dark background for cards */
+padding: 20px;
+border-radius: 8px;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.skills-column h3 {
+text-align: center;
+color: #2e82e8; 
+margin-bottom: 20px;
+}
+
+.card {
+margin-top: 10px;
+}
+
+.card h4 {
+margin-bottom: 10px;
+color: #8db3e8; /* Orange color for subheadings */
+}
+
+.skill-bar {
+margin-bottom: 15px;
+}
+
+.skill-bar span {
+display: block;
+font-size: 14px;
+margin-bottom: 5px;
+color: #fff; /* White text for skill percentage */
+}
+
+.bar-container {
+background: #333;
+border-radius: 8px;
+height: 10px;
+overflow: hidden;
+}
+
+.bar {
+height: 100%;
+background: linear-gradient(90deg, #2e82e8, #b20710); 
+border-radius: 8px;
+}
+
+#Special .bar {
+background: linear-gradient(90deg, #2e82e8, #ff9900); /* Special skills gradient */
+}
+
+@media screen and (max-width: 768px) {
+.skills {
+    flex-direction: column;
+}
+}
+
+/* Hover effect for skills-column (cards) */
+.skills-column:hover {
+transform: scale(1.34); /* Slightly enlarge the card */
+box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5); /* Add shadow */
+transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover effect for skill-bar */
+.skill-bar:hover .bar {
+filter: brightness(1.2); /* Brighten the bar */
+transform: scaleX(1.05); /* Slightly expand the bar */
+transition: all 0.3s ease-in-out;
+}
+
+/* Text hover effect for skill-bar labels */
+.skill-bar:hover span {
+color: #2e88bd; /* Highlight label text */
+transition: color 0.3s ease-in-out;
+}
+
+
+</style>
+</head>
+<body>
+
+<div class="header">
+    <h1 class="title">SKILLS</h1>
+    <p class="subtitle">WHAT I CAN DO</p>
+</div>
+
+<div class="skills">
+    <!-- Technical Skills -->
+    <div class="skills-column">
+        <h3 class="tech">Technical Skills</h3>
+        <div class="card">
+            <h4>Programming Languages</h4>
+            <div class="skill-bar">
+                <span>Java (50%)</span>
+                <div class="bar-container">
+                    <div class="bar" style="width: 40%;"></div>
+                </div>
+            </div>
+            <div class="skill-bar">
+                <span>PHP (30%)</span>
+                <div class="bar-container">
+                    <div class="bar" style="width: 30%;"></div>
+                </div>
+            </div>
+            <div class="skill-bar">
+                <span>HTML & CSS (75%)</span>
+                <div class="bar-container">
+                    <div class="bar" style="width: 75%;"></div>
+                </div>
+            </div>
+            <h4>Tools</h4>
+            <div class="skill-bar">
+                <span>VS Code (85%)</span>
+                <div class="bar-container">
+                    <div class="bar" style="width: 85%;"></div>
+                </div>
+            </div>
+            <div class="skill-bar">
+                <span>JGrasp (85%)</span>
+                <div class="bar-container">
+                    <div class="bar" style="width: 85%;"></div>
+                </div>
+            </div>
+            <div class="skill-bar">
+                <span>NetBeans (50%)</span>
+                <div class="bar-container">
+                    <div class="bar" style="width: 50%;"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Soft Skills -->
+    <div class="skills-column">
+        <h3 class="soft">Soft Skills</h3>
+        <div class="card">
+            <div class="skill-bar">
+                <span>Communication (75%)</span>
+                <div class="bar-container">
+                    <div class="bar" style="width: 75%;"></div>
+                </div>
+            </div>
+            <div class="skill-bar">
+                <span>Problem-Solving (50%)</span>
+                <div class="bar-container">
+                    <div class="bar" style="width: 50%;"></div>
+                </div>
+            </div>
+            <div class="skill-bar">
+                <span>Teamwork (90%)</span>
+                <div class="bar-container">
+                    <div class="bar" style="width: 90%;"></div>
+                </div>
+            </div>
+            <div class="skill-bar">
+                <span>Time Management (80%)</span>
+                <div class="bar-container">
+                    <div class="bar" style="width: 80%;"></div>
+                </div>
+            </div>
+            <div class="skill-bar">
+                <span>Adaptability (85%)</span>
+                <div class="bar-container">
+                    <div class="bar" style="width: 85%;"></div>
+                </div>
+            </div>
+            <div class="skill-bar">
+                <span>Critical Thinking (65%)</span>
+                <div class="bar-container">
+                    <div class="bar" style="width: 65%;"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Special Skills -->
+    <div class="skills-column" id="Special">
+        <h3 class="kakaiba">Other Skills <br>( joke only )</h3>
+        <div class="card">
+            <div class="skill-bar">
+                <span>Magpuyat (1000%)</span>
+                <div class="bar-container">
+                    <div class="bar" style="width: 50%;"></div>
+                </div>
+            </div>
+            <div class="skill-bar">
+                <span>Magreklamo (500%)</span>
+                <div class="bar-container">
+                    <div class="bar" style="width: 96%;"></div>
+                </div>
+            </div>
+            <div class="skill-bar">
+                <span>Gumastos (150%)</span>
+                <div class="bar-container">
+                    <div class="bar" style="width: 85%;"></div>
+                </div>
+            </div>
+            <div class="skill-bar">
+                <span>Palamunin (1000%)</span>
+                <div class="bar-container">
+                    <div class="bar" style="width: 100%;"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+    body, html {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+        color: white;
+        background-color: #141414; /* Dark background, Netflix-like */
+    }
+
+    header {
+        background-color: #141414;
+        color: white;
+        padding: 20px 50px;
+    }
+
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .navbar h1 {
+        font-size: 24px;
+        margin: 0;
+        color: #2e82e8; 
+    }
+
+    .navbar ul {
+        list-style: none;
+        display: flex;
+        margin: 0;
+        padding: 0;
+    }
+
+    .navbar ul li {
+        margin: 0 45px;
+    }
+
+    .navbar ul li a {
+        color: white;
+        text-decoration: none;
+        transition: color 0.3s ease;
+    }
+
+    .navbar ul li a:hover {
+        color: #2e82e8; 
+    }
+
+    .customize {
+        display: flex;
+        align-items: center;
+    }
+
+    .customize a {
+        text-decoration: none;
+        color: #2e82e8; 
+    }
+
+    .customize i {
+        padding-right: 10px;
+        color: #2e82e8;
+    }
+
+    .contacts-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        padding: 50px 20px;
+        gap: 30px;
+        background-color: #141414;
+    }
+
+    .get-in-touch, .contact-us {
+        background: #222;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        padding: 30px;
+        width: 400px;
+    }
+
+    .contact-header {
+        text-align: center;
+        margin-bottom: 30px;
+        width: 100%;
+    }
+
+    .contact-header h1 {
+        font-size: 70px;
+        font-weight: bold;
+        color: #2e82e8;
+        margin: 0;
+    }
+
+    .get-in-touch h2, .contact-us h2 {
+        font-size: 24px;
+        color: #2e82e8;
+        margin-bottom: 20px;
+    }
+
+    .get-in-touch ul {
+        list-style: none;
+        padding: 0;
+    }
+
+    .get-in-touch ul li {
+        display: flex;
+        align-items: center;
+        margin: 15px 0;
+        color: #fff;
+    }
+
+    .get-in-touch ul li i {
+        font-size: 20px;
+        margin-right: 10px;
+    }
+
+    .get-in-touch .social-icons {
+        display: flex;
+        gap: 15px;
+        margin-top: 20px;
+    }
+
+    .get-in-touch .social-icons a {
+        text-decoration: none;
+        font-size: 30px;
+        color: #fff;
+        padding: 10px;
+        background: #2e82e8;
+        border-radius: 50%;
+        transition: background 0.3s;
+    }
+
+    .get-in-touch .social-icons a:hover {
+        background: #2e82e8;
+    }
+
+    .contact-us form {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contact-us form input, .contact-us form textarea {
+        width: 91%;
+        padding: 15px;
+        margin-bottom: 15px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 14px;
+    }
+
+    .contact-us form textarea {
+        height: 100px;
+    }
+
+    .contact-us form button {
+        padding: 10px;
+        font-size: 16px;
+        border: none;
+        border-radius: 5px;
+        background-color:#2e82e8;
+        color: #fff;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+
+    .contact-us form button:hover {
+        background-color: #2e82e8;
+    }
+    /* Hover effects for contact list items */
+    .get-in-touch ul li:hover {
+    color: #2e82e8; /* Change text color on hover */
+    transform: scale(1.05); /* Slightly enlarge */
+    transition: all 0.3s ease-in-out;
+    }
+
+    /* Hover effects for contact icons */
+    .get-in-touch ul li i {
+    transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
+    }
+
+    .get-in-touch ul li:hover i {
+    color: #2e82e8; /* Change icon color */
+    transform: rotate(20deg); /* Rotate icon slightly */
+    }
+
+    /* Hover effects for social icons */
+    .get-in-touch .social-icons a {
+    transition: background 0.3s, transform 0.3s;
+    }
+
+    .get-in-touch .social-icons a:hover {
+    background: #2e82e8; /* Darker red */
+    transform: scale(1.1); /* Slightly enlarge */
+    }
+
+    /* Hover effects for form inputs */
+    .contact-us form input:hover, 
+    .contact-us form textarea:hover {
+    border-color: #2e82e8; /* Change border color on hover */
+    box-shadow: 0 0 5px rgba(229, 9, 20, 0.7); /* Add glowing effect */
+    transition: all 0.3s ease-in-out;
+    }
+
+    /* Hover effect for the submit button */
+    .contact-us form button:hover {
+    background-color: #2e82e8; /* Darker red */
+    transform: scale(1.05); /* Slightly enlarge */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Add shadow effect */
+    }
+
+</style>
+</head>
+<body>
+<!-- Contact Section -->
+<div class="contacts-container">
+    <!-- Contact Title -->
+    <div class="contact-header">
+        <h1>CONTACTS</h1>
+    </div>
+
+    <!-- Get in Touch Section -->
+    <div class="get-in-touch">
+        <h2>Let's get in touch:</h2>
+        <ul>
+            <li><i class='bx bx-envelope'></i>balolongjv.750.stud@cdd.edu.ph</li>
+            <li><i class='bx bx-phone'></i>09464219604</li>
+            <li><i class='bx bxl-facebook'></i>Jam Khurvey Balolong</li>
+            <li><i class='bx bxl-instagram'></i>jamkhrvy</li>
+            <li><i class='bx bxl-linkedin'></i>jam khurvey balolong</li>
+        </ul>
+    </div>
+
+    <!-- Contact Us Form Section -->
+    <div class="contact-us">
+        <h2>Contact us:</h2>
+        <form method="POST" action="contacts.php">
+            <input type="text" name="name" placeholder="Name" required>
+            <input type="email" name="email" placeholder="Email" required>
+            <textarea name="message" placeholder="Message..." required></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </div>
+</div>
+</body>
+</html>
+

@@ -1,0 +1,989 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            color: white;
+            background: black; /* Fallback background color */
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+
+        header {
+            background-color: #141414; 
+            color: white;
+            padding: 20px 50px;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .navbar h1 {
+            font-size: 24px;
+            margin: 0;
+            color: #d896ff; 
+        }
+
+        .navbar ul {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar ul li {
+            margin: 0 45px;
+        }
+
+        .navbar ul li a {
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .navbar ul li a:hover {
+            color: #d896ff; 
+        }
+
+        .customize {
+            display: flex;
+            align-items: center;
+        }
+
+        .customize a {
+            color: #d896ff; 
+            text-decoration: none;
+        }
+
+        .customize i {
+            padding-right: 10px;
+            color: #d896ff; 
+        }
+
+        .header {
+            text-align: center;
+            padding: 20px 20px;
+        }
+
+        .profile-container {
+            text-align: center;
+            margin-top: 0px;
+        }
+        .profile-picture {
+        perspective: 1000px; /* Adds depth to the rotation effect */
+        }
+
+        .profile-picture img {
+        width: 350px;
+        height: 350px;
+        object-fit: cover;
+        border-radius: 50%;
+        border: 5px solid #d896ff;
+        transition: transform 0.6s ease;
+        transform-style: preserve-3d;
+        }
+
+        .profile-picture img:hover {
+        transform: rotateY(180deg);
+        box-shadow: 0 0 20px #d896ff;
+        }
+
+        .profile-picture img {
+            width: 350px; /* Adjust the size as needed */
+            height: 350px;
+            object-fit: cover;
+            border-radius: 50%; /* Circular image */
+            border: 5px solid #d896ff; 
+        }
+
+        .title {
+            font-size: 70px;
+            font-weight: bold;
+            color: #d896ff;
+            margin-bottom: 10px;
+            margin-top: 0px;
+        }
+
+        .subtitle {
+            padding-top: 0px;
+            margin-top: 0px;
+            font-size: 30px;
+            color: white; /* White subtitle */
+            text-decoration: overline;
+        }
+
+        .about {
+            padding: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: auto;
+        }
+
+        .bcard {
+            display: flex;
+            width: 80%;
+            background-color: rgba(0, 0, 0, 0.10); /* Dark background with slight opacity */
+            padding: 10px;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.10);
+        }
+
+        .left-panel {
+            flex: 1;
+            text-align: left;
+            padding-right: 20px;
+            border-right: 2px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .right-panel {
+            flex: 2;
+            padding-left: 20px;
+        }
+
+        .info-list {
+            display: flex;
+            flex-direction: column; /* Arrange items vertically */
+            gap: 10px;
+            margin: 0;
+            padding: 0;
+        }
+
+        .info-list li {
+            list-style: none;
+            font-size: 18px;
+        }
+
+        .info-list strong {
+            color: #d896ff; 
+        }
+        
+
+        .one {
+            font-size: 30px;
+            margin-bottom: 20px;
+            margin-left: 0;
+            margin-top: 55px;
+        }
+
+        .two {
+            font-size: 17px;
+            line-height: 1.8;
+            font-style: italic;
+            color: rgba(255, 255, 255, 0.8);
+        }
+
+        b {
+            color: #d896ff; 
+        }
+    </style>
+</head>
+<body>
+<header>
+    <div class="navbar">
+        <h1>CAMILE.</h1>
+        <nav>
+            <ul>
+                <li><a href="landingpage.html">HOME</a></li>
+                <li><a href="aboutjam.html">JAM</a></li>
+                <li><a href="aboutcamille.html">CAMILE</a></li>
+                <li><a href="aboutgwen.html">GWEN</a></li>
+                <li><a href="aboutsean.html">SEAN</a></li>
+                <li><a href="aboutalvin.html">ALVIN</a></li>
+                
+            </ul>
+        </nav>
+        <div class="customize">
+            <i class=''></i>
+            <a href="edit.php"></a>
+        </div>
+    </div>
+</header>
+
+<div class="header">
+    <h1 class="title">ABOUT ME</h1>
+    <p class="subtitle">KNOW ME MORE</p>
+</div>
+
+<div class="profile-container">
+    <div class="profile-picture">
+        <img src="img/camile1.jpg" alt="Profile Picture">
+    </div>
+</div>
+
+<div class="about">
+    <div class="bcard">
+        <div class="left-panel">
+            <ul class="info-list">
+                <li><strong>Name:</strong> Camile O. Aquino</li>
+                <li><strong>Age:</strong> 21 yrs old</li>
+                <li><strong>Address:</strong> Inlambo, Mangaldan Pangasinan</li>
+                <li><strong>Birthdate:</strong> September 30, 2003</li>
+                <li><strong>Course:</strong> Bachelor of Science in Information Technology</li>
+                <li><strong>School:</strong> Universidad De Dagupan</li>
+            </ul>
+        </div>
+        <div class="right-panel">
+            <p class="two">
+                My passion for design motivated me to shift from BSCriminology to Information Technology at Universidad de Dagupan.  
+                This program offers a unique blend of technical and creative skills coding, website development, and image editing that 
+                I believe will be highly beneficial for my future career.
+            </p>
+        </div>
+    </div>
+</div>
+<style>
+    body, html {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+        color: white;
+        background-color: #000;
+    }
+
+    header {
+        background-color: #141414;
+        color: white;
+        padding: 20px 50px;
+    }
+
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .navbar h1 {
+        font-size: 24px;
+        margin: 0;
+        color: #d896ff;
+    }
+
+    .navbar ul {
+        list-style: none;
+        display: flex;
+        margin: 0;
+        padding: 0;
+    }
+
+    .navbar ul li {
+        margin: 0 45px;
+    }
+
+    .navbar ul li a {
+        color: white;
+        text-decoration: none;
+        transition: color 0.3s ease;
+    }
+
+    .navbar ul li a:hover {
+        color: #d896ff;
+    }
+
+    .customize {
+        display: flex;
+        align-items: center;
+    }
+
+    .customize a {
+        text-decoration: none;
+        color: #d896ff;
+    }
+
+    .customize i {
+        padding-right: 10px;
+        color: #d896ff;
+    }
+
+    .header {
+        padding: 50px;
+        text-align: center;
+    }
+
+    .title {
+        font-size: 70px;
+        font-weight: bold;
+        color: #d896ff;
+        margin-bottom: 10px;
+    }
+
+    .subtitle {
+         padding-top: 0px;
+    margin-top: 0px;
+    font-size: 30px;
+    color: white; /* White subtitle */
+    text-decoration: overline;
+    }
+
+    .section-title {
+        font-size: 30px;
+        color: #d896ff;
+        text-align: center;
+        margin: 20px 0;
+    }
+
+    .projects {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 20px;
+        padding: 50px;
+    }
+
+    .project-card {
+        background-color: #222;
+        border-radius: 20px;
+        text-align: center;
+        padding: 20px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .project-card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    }
+
+    .project-card img {
+    width: 100%; /* Make images responsive */
+    max-width: 370px; /* Maximum width for images */
+    height: 300px; /* Fixed height for consistency */
+    object-fit: cover; /* Ensures images fill the space without distortion */
+    border-radius: 10px;
+    margin-bottom: 15px;
+    transition: transform 0.3s ease;
+    }
+
+    .project-card:hover img {
+    transform: scale(1.1); /* Slight zoom on hover */
+    }
+
+    .project-title {
+        font-size: 30px;
+        color: #d896ff;
+        margin-bottom: 0px;
+    }
+
+    .project-description {
+        font-size: 25px;
+        color: #fff;
+        margin-bottom: 15px;
+    }
+
+    .project-buttons {
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+        margin-top: 10px;
+    }
+
+    .project-buttons i {
+        font-size: 100px;
+        transition: color 0.3s ease, transform 0.3s ease;
+    }
+
+    .project-buttons i:hover {
+        color: #d896ff;
+        transform: scale(1.3);
+    }
+    project-card .project-buttons i.bxl-java {
+    color: #ffa500 ; /* Java - Orange */
+    }
+
+    .project-card .project-buttons i.bxl-html5 {
+    color: #e34c26; /* HTML - Red-Orange */
+    }
+
+    .project-card .project-buttons i.bxl-css3 {
+    color: #2965f1; /* CSS - Blue */
+    }
+
+    .project-card .project-buttons i.bxl-javascript {
+    color: #f7df1e; /* JavaScript - Yellow */
+    }
+</style>
+</head>
+<body>
+    <div class="header">
+        <h1 class="title">PROJECTS</h1>
+        <p class="subtitle">MY PROJECTS</p>
+    </div>
+
+    <div class="section-title"></div>
+    <div class="projects">
+        <!-- Rainbow Calculator -->
+        <div class="project-card">
+            <img src="img/camilep1.jpg" alt="Logic Quiz Game">
+            <h3 class="project-title">Logic Quiz Game</h3>
+            <p class="project-description">
+                In the Logic Quiz Game, there are six categories: General Knowledge, Math, History, Programming, Critical Thinking, and Philosophy. 
+                Each  category contaions 10 multiple-choice questions. You earn 1 point for each correct answer but if your answer is wrong, 
+                it will be deducted from your score. The goal is to maintain a high score by answering as many questions correctly as possible.
+            </p>
+            <div class="project-buttons">
+            <i class="bx bxl-java" title="Java"></i>
+            </div>
+        </div>
+    </div>
+<style>
+    body, html {
+margin: 0;
+padding: 0;
+font-family: Arial, sans-serif;
+color: white;
+background-color: #000; /* Dark background, Netflix-like */
+}
+
+header {
+background-color:  #141414; /* Dark background for header */
+color: white;
+padding: 20px 50px;
+}
+
+.navbar {
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+.navbar h1 {
+font-size: 24px;
+margin: 0;
+color: #d896ff; 
+}
+
+.navbar ul {
+list-style: none;
+display: flex;
+margin: 0;
+padding: 0;
+}
+
+.navbar ul li {
+margin: 0 45px;
+}
+
+.navbar ul li a {
+color: white;
+text-decoration: none;
+transition: color 0.3s ease;
+}
+
+.navbar ul li a:hover {
+color: #d896ff; 
+}
+
+.customize {
+display: flex;
+align-items: center;
+}
+
+.customize a {
+color: white;
+text-decoration: none;
+color: #d896ff; 
+}
+
+.customize i {
+padding-right: 10px;
+color: #d896ff; 
+}
+
+.header {
+text-align: center;
+padding: 50px;
+}
+
+.title {
+font-size: 70px;
+font-weight: bold;
+color: #d896ff;
+margin-bottom: 10px;
+margin-top: 0px;
+}
+
+.subtitle {
+padding-top: 0px;
+margin-top: 0px;
+font-size: 30px;
+color: white; /* White subtitle */
+text-decoration: overline;
+}
+
+.skills {
+display: flex;
+justify-content: space-around;
+flex-wrap: wrap;
+gap: 20px;
+margin: 20px auto;
+max-width: 1200px;
+}
+
+.skills-column {
+flex: 1;
+min-width: 50px;
+background: #222; /* Dark background for cards */
+padding: 20px;
+border-radius: 8px;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.skills-column h3 {
+text-align: center;
+color: #d896ff; 
+margin-bottom: 20px;
+}
+
+.card {
+margin-top: 10px;
+}
+
+.card h4 {
+margin-bottom: 10px;
+color: #ff9900; /* Orange color for subheadings */
+}
+
+.skill-bar {
+margin-bottom: 15px;
+}
+
+.skill-bar span {
+display: block;
+font-size: 14px;
+margin-bottom: 5px;
+color: #fff; /* White text for skill percentage */
+}
+
+.bar-container {
+background: #333;
+border-radius: 8px;
+height: 10px;
+overflow: hidden;
+}
+
+.bar {
+height: 100%;
+background: linear-gradient(90deg, #d896ff, #b20710); 
+border-radius: 8px;
+}
+
+#Special .bar {
+background: linear-gradient(90deg, #d896ff, #ff9900); /* Special skills gradient */
+}
+
+@media screen and (max-width: 768px) {
+.skills {
+    flex-direction: column;
+}
+}
+
+/* Hover effect for skills-column (cards) */
+.skills-column:hover {
+transform: scale(1.34); /* Slightly enlarge the card */
+box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5); /* Add shadow */
+transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover effect for skill-bar */
+.skill-bar:hover .bar {
+filter: brightness(1.2); /* Brighten the bar */
+transform: scaleX(1.05); /* Slightly expand the bar */
+transition: all 0.3s ease-in-out;
+}
+
+/* Text hover effect for skill-bar labels */
+.skill-bar:hover span {
+color: #ff9900; /* Highlight label text */
+transition: color 0.3s ease-in-out;
+}
+
+
+</style>
+</head>
+<body>
+
+<div class="header">
+    <h1 class="title">SKILLS</h1>
+    <p class="subtitle">WHAT I CAN DO</p>
+</div>
+
+<div class="skills">
+    <!-- Technical Skills -->
+    <div class="skills-column">
+        <h3 class="tech">Technical Skills</h3>
+        <div class="card">
+            <h4>Programming Languages</h4>
+            <div class="skill-bar">
+                <span>Java (50%)</span>
+                <div class="bar-container">
+                    <div class="bar" style="width: 40%;"></div>
+                </div>
+            </div>
+            <div class="skill-bar">
+                <span>PHP (30%)</span>
+                <div class="bar-container">
+                    <div class="bar" style="width: 30%;"></div>
+                </div>
+            </div>
+            <div class="skill-bar">
+                <span>HTML & CSS (75%)</span>
+                <div class="bar-container">
+                    <div class="bar" style="width: 75%;"></div>
+                </div>
+            </div>
+            <h4>Tools</h4>
+            <div class="skill-bar">
+                <span>VS Code (85%)</span>
+                <div class="bar-container">
+                    <div class="bar" style="width: 85%;"></div>
+                </div>
+            </div>
+            <div class="skill-bar">
+                <span>JGrasp (85%)</span>
+                <div class="bar-container">
+                    <div class="bar" style="width: 85%;"></div>
+                </div>
+            </div>
+            <div class="skill-bar">
+                <span>NetBeans (50%)</span>
+                <div class="bar-container">
+                    <div class="bar" style="width: 50%;"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Soft Skills -->
+    <div class="skills-column">
+        <h3 class="soft">Soft Skills</h3>
+        <div class="card">
+            <div class="skill-bar">
+                <span>Communication (75%)</span>
+                <div class="bar-container">
+                    <div class="bar" style="width: 75%;"></div>
+                </div>
+            </div>
+            <div class="skill-bar">
+                <span>Problem-Solving (50%)</span>
+                <div class="bar-container">
+                    <div class="bar" style="width: 50%;"></div>
+                </div>
+            </div>
+            <div class="skill-bar">
+                <span>Teamwork (90%)</span>
+                <div class="bar-container">
+                    <div class="bar" style="width: 90%;"></div>
+                </div>
+            </div>
+            <div class="skill-bar">
+                <span>Time Management (80%)</span>
+                <div class="bar-container">
+                    <div class="bar" style="width: 80%;"></div>
+                </div>
+            </div>
+            <div class="skill-bar">
+                <span>Adaptability (85%)</span>
+                <div class="bar-container">
+                    <div class="bar" style="width: 85%;"></div>
+                </div>
+            </div>
+            <div class="skill-bar">
+                <span>Critical Thinking (65%)</span>
+                <div class="bar-container">
+                    <div class="bar" style="width: 65%;"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Special Skills -->
+    <div class="skills-column" id="Special">
+        <h3 class="kakaiba">Other Skills <br>( joke only )</h3>
+        <div class="card">
+            <div class="skill-bar">
+                <span>Magpuyat (1000%)</span>
+                <div class="bar-container">
+                    <div class="bar" style="width: 50%;"></div>
+                </div>
+            </div>
+            <div class="skill-bar">
+                <span>Magreklamo (500%)</span>
+                <div class="bar-container">
+                    <div class="bar" style="width: 96%;"></div>
+                </div>
+            </div>
+            <div class="skill-bar">
+                <span>Gumastos (150%)</span>
+                <div class="bar-container">
+                    <div class="bar" style="width: 85%;"></div>
+                </div>
+            </div>
+            <div class="skill-bar">
+                <span>Palamunin (1000%)</span>
+                <div class="bar-container">
+                    <div class="bar" style="width: 100%;"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+    body, html {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+        color: white;
+        background-color: #141414; /* Dark background,*/
+    }
+
+    header {
+        background-color: #141414;
+        color: white;
+        padding: 20px 50px;
+    }
+
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .navbar h1 {
+        font-size: 24px;
+        margin: 0;
+        color: #d896ff; 
+    }
+
+    .navbar ul {
+        list-style: none;
+        display: flex;
+        margin: 0;
+        padding: 0;
+    }
+
+    .navbar ul li {
+        margin: 0 45px;
+    }
+
+    .navbar ul li a {
+        color: white;
+        text-decoration: none;
+        transition: color 0.3s ease;
+    }
+
+    .navbar ul li a:hover {
+        color: #d896ff; 
+    }
+
+    .customize {
+        display: flex;
+        align-items: center;
+    }
+
+    .customize a {
+        text-decoration: none;
+        color: #d896ff; 
+    }
+
+    .customize i {
+        padding-right: 10px;
+        color: #d896ff;
+    }
+
+    .contacts-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        padding: 50px 20px;
+        gap: 30px;
+        background-color: #141414;
+    }
+
+    .get-in-touch, .contact-us {
+        background: #222;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        padding: 30px;
+        width: 400px;
+    }
+
+    .contact-header {
+        text-align: center;
+        margin-bottom: 30px;
+        width: 100%;
+    }
+
+    .contact-header h1 {
+        font-size: 70px;
+        font-weight: bold;
+        color: #d896ff;
+        margin: 0;
+    }
+
+    .get-in-touch h2, .contact-us h2 {
+        font-size: 24px;
+        color: #d896ff;
+        margin-bottom: 20px;
+    }
+
+    .get-in-touch ul {
+        list-style: none;
+        padding: 0;
+    }
+
+    .get-in-touch ul li {
+        display: flex;
+        align-items: center;
+        margin: 15px 0;
+        color: #fff;
+    }
+
+    .get-in-touch ul li i {
+        font-size: 20px;
+        margin-right: 10px;
+    }
+
+    .get-in-touch .social-icons {
+        display: flex;
+        gap: 15px;
+        margin-top: 20px;
+    }
+
+    .get-in-touch .social-icons a {
+        text-decoration: none;
+        font-size: 30px;
+        color: #fff;
+        padding: 10px;
+        background: #d896ff;
+        border-radius: 50%;
+        transition: background 0.3s;
+    }
+
+    .get-in-touch .social-icons a:hover {
+        background: #d896ff;
+    }
+
+    .contact-us form {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contact-us form input, .contact-us form textarea {
+        width: 91%;
+        padding: 15px;
+        margin-bottom: 15px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 14px;
+    }
+
+    .contact-us form textarea {
+        height: 100px;
+    }
+
+    .contact-us form button {
+        padding: 10px;
+        font-size: 16px;
+        border: none;
+        border-radius: 5px;
+        background-color: #d896ff;
+        color: #fff;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+
+    .contact-us form button:hover {
+        background-color: #d896ff;
+    }
+    /* Hover effects for contact list items */
+    .get-in-touch ul li:hover {
+    color: #d896ff; /* Change text color on hover */
+    transform: scale(1.05); /* Slightly enlarge */
+    transition: all 0.3s ease-in-out;
+    }
+
+    /* Hover effects for contact icons */
+    .get-in-touch ul li i {
+    transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
+    }
+
+    .get-in-touch ul li:hover i {
+    color: #d896ff; /* Change icon color */
+    transform: rotate(20deg); /* Rotate icon slightly */
+    }
+
+    /* Hover effects for social icons */
+    .get-in-touch .social-icons a {
+    transition: background 0.3s, transform 0.3s;
+    }
+
+    .get-in-touch .social-icons a:hover {
+    background: #d896ff; /* Darker red */
+    transform: scale(1.1); /* Slightly enlarge */
+    }
+
+    /* Hover effects for form inputs */
+    .contact-us form input:hover, 
+    .contact-us form textarea:hover {
+    border-color: #d896ff; /* Change border color on hover */
+    box-shadow: 0 0 5px rgba(229, 9, 20, 0.7); /* Add glowing effect */
+    transition: all 0.3s ease-in-out;
+    }
+
+    /* Hover effect for the submit button */
+    .contact-us form button:hover {
+    background-color: #d896ff; /* Darker red */
+    transform: scale(1.05); /* Slightly enlarge */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Add shadow effect */
+    }
+
+</style>
+</head>
+<body>
+<!-- Contact Section -->
+<div class="contacts-container">
+    <!-- Contact Title -->
+    <div class="contact-header">
+        <h1>CONTACTS</h1>
+    </div>
+
+    <!-- Get in Touch Section -->
+    <div class="get-in-touch">
+        <h2>Let's get in touch:</h2>
+        <ul>
+            <li><i class='bx bx-envelope'></i>aquinoco.309.stud@cdd.edu.ph</li>
+            <li><i class='bx bx-phone'></i>09876543222</li>
+            <li><i class='bx bxl-facebook'></i>Camile Aquino</li>
+            <li><i class='bx bxl-instagram'></i>itsme_camile</li>
+            <li><i class='bx bxl-linkedin'></i>Camile Aquino</li>
+        </ul>
+    </div>
+
+    <!-- Contact Us Form Section --> 
+    <div class="contact-us">
+        <h2>Contact us:</h2>
+        <form method="POST" action="contacts.php">
+            <input type="text" name="name" placeholder="Name" required>
+            <input type="email" name="email" placeholder="Email" required>
+            <textarea name="message" placeholder="Message..." required></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </div>
+</div>
+</body>
+</html>
+
